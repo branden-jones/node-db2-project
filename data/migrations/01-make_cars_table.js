@@ -8,7 +8,7 @@ exports.up = function (knex) {
 
     tbl.string('model', 128).notNullable()
 
-    tbl.numeric('milage').notNullable().unsigned()
+    tbl.integer('mileage').notNullable().unsigned()
 
     tbl.string('title', 128).defaultTo('clean')
 
