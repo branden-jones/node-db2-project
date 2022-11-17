@@ -29,7 +29,8 @@ router.post('/',
     checkCarPayload,
     checkVinNumberValid,
     checkVinNumberUnique,async (req,res,next) => {
-    res.json(req.body)
+    // res.json(req.body)
+    res.json('posting new car')
 })
 
 module.exports = router
